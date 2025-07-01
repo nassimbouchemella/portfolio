@@ -10,10 +10,10 @@ const Footer = () => {
     <footer className='absolute w-[100vw] h-[50vh] bg-black flex flex-col justify-center' id="contact ">
         <BackgroundBeams className='absolute inset-0 z-0 w-full h-full'/>
         <div className='relative z-10 w-full flex  flex-col justify-center items-center h-full gap-6'>
-          <h1 className='text-white'>
+          <h1 className='text-white text-4xl'>
             Une offre de <span className='text-purple'> stage ? </span>
           </h1>
-          <a href='mailto:nassim.bouchemella@gmail.com'>
+          <a href='mailto:nassim.bouchemella@gmail.com' className='m-3 p-2'>
             <Button 
             title='Lets get in touch'
             icon={<CiLocationArrow1 />}
