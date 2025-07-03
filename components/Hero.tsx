@@ -7,7 +7,7 @@ import { BackgroundGradientAnimation } from './ui/background-gradient-animation'
 
 const Hero = () => {
   return (
-    <div className="relative flex h-full w-full items-center justify-center bg-black-100 ">
+    <div className="relative flex h-[100vh] w-[100vw] items-center justify-center bg-black-100 ">
       <div>
         <div className='h-[50vh] flex items-center justify-center z-10 relative'>
         <TextHoverEffect text="Nassim"/>
