@@ -13,10 +13,9 @@ export default function Home() {
       <header className="absolute">
         <Navbar/>
       </header>
-      <main className="relative bg-black-100 h-screen">
+      <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto">
         <Hero/>
         <About/>
-        <Projects/>
         <HeroParallaxDemo/>
         <SkillSection/>
         <Footer/>
