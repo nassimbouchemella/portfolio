@@ -3,7 +3,6 @@ import Button from './ui/Button'
 import { CiLocationArrow1 } from "react-icons/ci";
 import { BackgroundBeams } from './ui/background-beams';
 import { socials } from '@/data/socials';
-import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (

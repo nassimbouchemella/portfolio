@@ -1,10 +1,8 @@
 "use client"
 import { Projets } from "@/components/Projets";
 import SkillSection from "@/components/SkillSection";
-import Image from "next/image";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
-import Exemple from "@/components/Exemple";
 import Hero from "@/components/Hero";
 
 export default function Home() {

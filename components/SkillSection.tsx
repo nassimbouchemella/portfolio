@@ -41,11 +41,11 @@ const Card = ({
       </AnimatePresence>
  
       <div className="relative z-20 flex flex-col items-center justify-center w-full h-full text-center">
-        <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-100 group-hover/canvas-card:opacity-0 group-hover/canvas-card:-translate-y-5 group-hover/canvas-card:scale-150 transition-transform ease-out">
+        <div className="absolute inset-0 flex items-center justify-center  duration-300 opacity-100 group-hover/canvas-card:opacity-0 group-hover/canvas-card:-translate-y-5 group-hover/canvas-card:scale-150 transition-transform ease-out">
           <div className="text-5xl text-white">{icon1}</div>
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 opacity-0 group-hover/canvas-card:opacity-100 group-hover/canvas-card:-translate-y-5 group-hover/canvas-card:scale-150 transition-transform ease-out">
+        <div className="absolute inset-0 flex items-center justify-center  duration-300 opacity-0 group-hover/canvas-card:opacity-100 group-hover/canvas-card:-translate-y-5 group-hover/canvas-card:scale-150 transition-transform ease-out">
           <div className="text-5xl text-white">{icon2}</div>
         </div>
 
