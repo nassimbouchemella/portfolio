@@ -26,6 +26,8 @@ const config = {
   		}
   	},
   	extend: {
+		fontFamily: {
+    		cremisse: ['Cremiss', ...require('tailwindcss/defaultTheme').fontFamily.sans]},
   		colors: {
   			black: {
   				'100': '#000319',
@@ -214,7 +216,6 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
-
 
 
 export default config;

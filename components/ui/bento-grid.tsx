@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import animationData from "@/data/confetti.json";
 import Button from "@/components/ui/Button";
+import CountUp from "./CountUp";
 
 export const BentoGrid = ({
   className,
@@ -136,8 +137,6 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {/* for the github 3d globe */}
-          {id === 2}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -169,25 +168,9 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {id === 6 && (
-            <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
-
-              <Button
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                classNameButton="!bg-[#161A31]"
-              />
+          {id === 4 && (
+            <div className="m-5 relative text-3xl">
+              <CountUp direction="up" from={100} to={10} duration={1} startWhen={true} />
             </div>
           )}
         </div>

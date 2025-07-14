@@ -1,29 +1,37 @@
+"use client"
 import React from 'react'
-import { Spotlight } from '@/components/ui/Spotlight'
-import { CanvasRevealEffect } from './ui/canvas-reveal-effect'
-import { TextHoverEffect } from './ui/text-hover-effect'
-import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
+import { InfiniteMovingCards } from './ui/infinite-moving-cards'
+import { testimonials } from '@/data/testimonials'
+import Particles from './ui/Particles'
+import { cn } from '@/lib/utils'
+import Button from './ui/Button'
 
 const Hero = () => {
   return (
-    <div className="relative flex h-[100vh] w-[100vw] items-center justify-center bg-black-100 ">
-      <div>
-        <div className='h-[50vh] flex items-center justify-center z-10 relative'>
-        <TextHoverEffect text="Nassim"/>
+    <div className='relative w-[100vw] h-[100vh] text-white flex justify-center items-center flex-col overflow-hidden'>
+        <h1 className='w-[50vw] text-center text-[20vw] font-cremisse z-10'>
+            Nassim
+        </h1>
+        <div className='w-full flex flex-row justify-center gap-8'>
+          <p className='pb-10 font-cremisse text-3xl'>étudiant à l'école de technologie supérieur de Montréal</p>
         </div>
-      </div>
-      <div className=' absolute w-full h-full opacity-30 z-0'>
-        <div
-          className={cn(
-            "absolute inset-0",
-            "[background-size:40px_40px]",
-            "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-            "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-          )}
-        />
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_1%,black)] dark:bg-black"></div>
-        </div>
+          <div className='flex justify-center z-10'>
+            <a href="#about" className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-9 py-5 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
+              Cliquez pour scroller
+            </a>
+          </div>  
+          <div style={{ width: '100%', height: '100vh', position: 'absolute', opacity:"0.5"}}>
+          <Particles
+            particleColors={['#ffffff', '#9d00ff']}
+            particleCount={800}
+            particleSpread={10}
+            speed={0.05}
+            particleBaseSize={80}
+            moveParticlesOnHover={false}
+            alphaParticles={false}
+            disableRotation={false}
+          />
+          </div>
     </div>
   )
 }

@@ -66,25 +66,20 @@ const SkillSection = () => {
 
   return (
     
-    <div className='flex flex-col bg-[#101012] w-full'>
+    <div className='flex flex-col bg-[#101012] w-full h-[80vh] overflow-visible'>
       
         <div className='bg-transparent w-full p-10'>
-          <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-extrabold text-5xl tracking-wide'>
+          <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-extrabold text-5xl tracking-wide font-cremisse'>
             Découvrez une liste de <Cover>mes compétences</Cover>
           </h1>
         </div>
     
-      <div className='flex flex-row bg-[#101012] p-10 justify-center items-center gap-10'>
-        <div className='flex flex-col justify-around items-center gap-20 w-1/4 h-full'>
-          <Button title="Language" classNameButton= "bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] m-2" onClick={() => setSelectedCategory("language")} />
-          <Button title="Framework" classNameButton="bg-[conic-gradient(from_90deg_at_50%_50%,#FF4D4D_0%,#FF66CC_50%,#FF4D4D_100%)] m-2" onClick={() => setSelectedCategory("framework")} />
-          <Button title="Design" classNameButton="bg-[conic-gradient(from_90deg_at_50%_50%,#001F3F_0%,#00FFFF_50%,#001F3F_100%)] m-2" onClick={() => setSelectedCategory("design")} />
-        </div>
+      <div className='flex flex-row bg-[#101012] p-10 overflow-visible justify-center items-center gap-10'>
 
-        <div className="flex justify-center w-3/4">
-          <div className='grid grid-cols-4 items-start gap-0 w-2/3'>
-            <AnimatePresence mode="wait">
-              {filteredSkills.map((skill) => (
+        <div className="flex justify-center w-3/4 overflow-visible">
+          <div className='grid grid-cols-6 items-start gap-0 w-full'>
+            <AnimatePresence>
+              {skillsItem.map((skill) => (
                 <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, y: 20 }}
