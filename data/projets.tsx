@@ -3,7 +3,7 @@ export const projets = [
     title: "Portfolio",
     link: "https://github.com/nassimbouchemella/portfolio",
     thumbnail:
-      "/thumbnails/portfolio.png",
+      "/portfolio.png",
   },
   {
     title: "Chess game",
@@ -15,7 +15,7 @@ export const projets = [
     title: "Server Bank",
     link: "https://github.com/nassimbouchemella/BankServer",
     thumbnail:
-      "/thumbnails/bank.png",
+      "/bank.png",
   },
 
   {
@@ -28,7 +28,7 @@ export const projets = [
     title: "Countdown",
     link: "https://github.com/nassimbouchemella/Countdown",
     thumbnail:
-      "/thumbnails/countdown.png",
+      "/countdown.png",
   },
   {
     title: "Laboratoires LOG121",
