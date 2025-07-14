@@ -1,10 +1,7 @@
 "use client"
 import React from 'react'
-import { InfiniteMovingCards } from './ui/infinite-moving-cards'
 import { testimonials } from '@/data/testimonials'
 import Particles from './ui/Particles'
-import { cn } from '@/lib/utils'
-import Button from './ui/Button'
 
 const Hero = () => {
   return (

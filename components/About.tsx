@@ -1,8 +1,6 @@
 "use client"
 import React from 'react'
-import image from '@/data/img/b84e3jd.png'
 import TiltedCard from './ui/TiltedCard'
-import Button from './ui/Button'
 
 const About = () => {
   return (
