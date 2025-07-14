@@ -1,9 +1,8 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 
 const Button = ({title, icon, classNameButton, onClick}:{title?:string, icon?:React.ReactNode,classNameButton? : string, onClick? : () => void}) => {
-    const [selected, setSelected] = useState(false);
-  
+    
     return (
     <div>
         <button 

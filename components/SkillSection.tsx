@@ -2,12 +2,8 @@
 import React from 'react'
 import { AnimatePresence, motion } from "motion/react";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import Button from './ui/Button';
 import {skillsItem} from '@/data/SkillsItem';
-import { FaReact } from 'react-icons/fa';
 import { Cover } from './ui/cover';
-import { AuroraBackground } from './ui/aurora-background';
-import { cn } from '@/lib/utils';
 
 const Card = ({
   title,
@@ -58,12 +54,7 @@ const Card = ({
 };
 
 const SkillSection = () => {
-  const [selectedCategory, setSelectedCategory] = React.useState<string>("language");
-
-  const filteredSkills = skillsItem.filter(
-    (skill) => skill.category === selectedCategory
-  );
-
+  
   return (
     
     <div className='flex flex-col bg-[#101012] w-full h-[80vh] overflow-visible'>
