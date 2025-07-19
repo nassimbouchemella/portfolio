@@ -9,7 +9,7 @@ const Hero = () => {
             Nassim
         </h1>
         <div className='w-full flex flex-row justify-center gap-8'>
-          <p className='pb-10 font-cremisse text-3xl'>étudiant à l&apos;école de technologie supérieur de Montréal</p>
+          <p className='pb-10 font-cremisse text-3xl'>étudiant à l&apos;école de technologie supérieure de Montréal</p>
         </div>
           <div className='flex justify-center z-10'>
             <a href="#about" className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-9 py-5 bg-[#0070f3] rounded-md text-white font-light transition duration-200 ease-linear">
