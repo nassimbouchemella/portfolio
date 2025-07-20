@@ -4,15 +4,11 @@ import TiltedCard from './ui/TiltedCard'
 
 const About = () => {
   return (
-     <section id="about" className='flex flex-row w-[100vw] h-[100vh] relative gap-5'>
+     <section id="about" className='flex flex-col justify-around items-center lg:flex-row w-[100vw] h-[100vh] relative gap-5 my-10'>
       <div className='flex justify-center items-center w-[40vw] h-[vh] z-10'>
         <TiltedCard
           imageSrc="/profil.png"
           altText="Profil picture"
-          containerHeight="700px"
-          containerWidth="600px"
-          imageHeight="700px"
-          imageWidth="600px"
           rotateAmplitude={20}
           scaleOnHover={1.1}
           showMobileWarning={false}
@@ -22,7 +18,7 @@ const About = () => {
           
       </div>
       <div className='flex items-center w-[50vw] h-[vh] text-white z-10'>
-        <ul className='flex flex-col gap-10 font-cremisse text-4xl break-words'>
+        <ul className='flex flex-col gap-10 font-cremisse text-xl lg:text-4xl break-words'>
           <li className='text-center'>
             Étudiant à l&apos;ETS. Passionné de programmation, d&apos;informatique, de design et d&apos;audiovisuel.<br/>
             Autodidacte toujours curieux. J&apos;explore de nouvelles technologies et je repousse mes limites à travers des projets créatifs.<br/>

@@ -57,7 +57,7 @@ const SkillSection = () => {
   
   return (
     
-    <div className='flex flex-col bg-[#101012] w-full h-[80vh] overflow-visible'>
+    <div className='flex flex-col bg-[#101012] w-full h-[100vh] lg:h-[80vh] overflow-visible'>
       
         <div className='bg-transparent w-full p-10'>
           <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-extrabold text-5xl tracking-wide font-cremisse'>
@@ -68,7 +68,7 @@ const SkillSection = () => {
       <div className='flex flex-row bg-[#101012] p-10 overflow-visible justify-center items-center gap-10'>
 
         <div className="flex justify-center w-3/4 overflow-visible">
-          <div className='grid grid-cols-6 items-start gap-0 w-full'>
+          <div className='grid grid-cols-3 lg:grid-cols-6 items-start gap-0 w-full'>
             <AnimatePresence>
               {skillsItem.map((skill) => (
                 <motion.div
