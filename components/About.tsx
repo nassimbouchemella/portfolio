@@ -4,8 +4,8 @@ import TiltedCard from './ui/TiltedCard'
 
 const About = () => {
   return (
-     <section id="about" className='flex flex-col justify-around items-center xl:flex-row w-[100vw] h-[100vh] relative gap-5 xl:my-40 '>
-      <div className='flex justify-center items-center w-[40vw] h-[vh] z-10'>
+     <section id="about" className='flex flex-col justify-around items-center xl:flex-row w-[100vw] xl:h-[100vh] relative gap-10 mb-20 xl:my-40 '>
+      <div className='flex justify-center items-center w-[40vw] h-[vh] z-10 lg:ml-20'>
         <TiltedCard
           imageSrc="/profil.png"
           altText="Profil picture"
@@ -19,7 +19,7 @@ const About = () => {
       </div>
       <div className='relative flex justify-center items-center h-[vh] w-[70vw] mx-auto text-white z-10'>
         <ul className='flex flex-col gap-10 font-cremisse text-2xl xl:text-4xl break-words'>
-          <li className='text-center hidden xl:block'>
+          <li className='text-center hidden xl:block w-[50vw]'>
             Étudiant à l&apos;ETS. Passionné de programmation, d&apos;informatique, de design et d&apos;audiovisuel.<br/>
             Autodidacte toujours curieux. J&apos;explore de nouvelles technologies et je repousse mes limites à travers des projets créatifs.<br/>
             Dynamique et super sociable. J&apos;aime travailler en équipe et partager des idées pour aller plus loin.

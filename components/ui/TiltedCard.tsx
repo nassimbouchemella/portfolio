@@ -95,7 +95,7 @@ export default function TiltedCard({
       )}
 
       <motion.div
-        className="relative [transform-style:preserve-3d] w-[300px] h-[200px] xl:w-[700px] xl:h-[700px]"
+        className="relative [transform-style:preserve-3d] w-[300px] h-[400px] xl:w-[700px] xl:h-[700px]"
         style={{
           rotateX,
           rotateY,
