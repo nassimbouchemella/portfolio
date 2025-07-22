@@ -95,7 +95,7 @@ export default function TiltedCard({
       )}
 
       <motion.div
-        className="relative [transform-style:preserve-3d] w-[500px] h-[400px] lg:w-[700px] lg:h-[700px]"
+        className="relative [transform-style:preserve-3d] w-[300px] h-[200px] xl:w-[700px] xl:h-[700px]"
         style={{
           rotateX,
           rotateY,
@@ -105,7 +105,7 @@ export default function TiltedCard({
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] w-[700px] h-[500px] lg:w-[900px] lg:h-[800px]"
+          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)] w-[300px] h-[400px] xl:w-[900px] xl:h-[800px]"
         />
 
         {displayOverlayContent && overlayContent && (

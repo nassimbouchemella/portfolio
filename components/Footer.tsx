@@ -23,7 +23,7 @@ const Footer = () => {
             {socials.map((social)=>
               <div key={social.id}>
               <a href={social.link}>
-                <div className="flex  flex-col justify-center items-center cursor-pointer backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 w-[4vw] h-[4vh] border border-black-300" key={social.id}>
+                <div className="flex  flex-col justify-center items-center cursor-pointer backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 w-[7vw] lg:w-[4vw] h-[4vh] border border-black-300" key={social.id}>
                   {social.icon}
                 </div>
               </a>

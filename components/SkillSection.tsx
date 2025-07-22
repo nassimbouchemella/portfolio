@@ -57,7 +57,7 @@ const SkillSection = () => {
   
   return (
     
-    <div className='flex flex-col bg-[#101012] w-full h-[100vh] lg:h-[80vh] overflow-visible'>
+    <div className='flex flex-col bg-[#101012] w-full xl:h-[80vh] overflow-visible'>
       
         <div className='bg-transparent w-full p-10'>
           <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-white font-extrabold text-5xl tracking-wide font-cremisse'>
